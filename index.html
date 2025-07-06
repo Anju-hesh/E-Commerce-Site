@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log In To Quick E</title>
+  <link rel="stylesheet" href="css/login.css">
+  
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to Quick E</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+      <button type="submit" class="btn-login">Login</button>
+    </form>
+
+    <div class="extra-links">
+      <a href="pages/fogetPassword.html">Forgot Password?</a> |
+      <a href="pages/signup.html">Create Account</a>
+    </div>
+  </div>
+
+    <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      if (email === "anjana@gmail.com" && password === "1234") {
+        alert("Login successful!");
+        window.location.href = "/pages/home.html";
+      } else {
+        alert("Invalid email or password!");
+      }
+    });
+  </script>
+</body>
+</html>

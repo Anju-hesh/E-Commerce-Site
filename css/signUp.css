@@ -1,0 +1,102 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signup-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      color: #fff;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      color: #fff;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 14px;
+      left: 18px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      pointer-events: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -10px;
+      left: 14px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      color: #00ffc3;
+      border-radius: 10px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #00ffc3;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      color: #000;
+    }
+
+    .btn:hover {
+      background-color: #00c9a7;
+    }
+
+    .signup-container p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .signup-container p a {
+      color: #00ffc3;
+      text-decoration: none;
+    }
+
+    .signup-container p a:hover {
+      text-decoration: underline;
+    }
