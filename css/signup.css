@@ -1,0 +1,125 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .signup-container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 40px 30px;
+      width: 400px;
+      color: white;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      outline: none;
+    }
+
+    .form-group input::placeholder {
+      color: transparent;
+    }
+
+    .form-group label {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #ffffffcc;
+      transition: 0.3s ease;
+      background-color: transparent;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -10px;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .btn {
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.25);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    p {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    a {
+      color: #ffffffcc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      .signup-container {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }

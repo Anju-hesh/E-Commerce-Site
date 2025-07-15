@@ -1,0 +1,67 @@
+    .navbar {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-links li a {
+    position: relative;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    color: white;
+}
+
+/* Hover effects for each button (based on position) */
+.nav-links li:nth-child(1) a:hover {
+    border-color: #1e90ff;
+    box-shadow: 0 0 15px #1e90ff77;
+    color: #1e90ff;
+}
+
+.nav-links li:nth-child(2) a:hover {
+    border-color: #ff69b4;
+    box-shadow: 0 0 15px #ff69b477;
+    color: #ff69b4;
+}
+
+.nav-links li:nth-child(3) a:hover {
+    border-color: #00ffcc;
+    box-shadow: 0 0 15px #00ffcc77;
+    color: #00ffcc;
+}
+
+.nav-links li:nth-child(4) a:hover {
+    border-color: #ffa500;
+    box-shadow: 0 0 15px #ffa50077;
+    color: #ffa500;
+}
+
+.nav-links li:nth-child(5) a:hover {
+    border-color: #ff0000;
+    box-shadow: 0 0 15px #ff000077;
+    color: #ff0000;
+}

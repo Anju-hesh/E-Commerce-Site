@@ -1,0 +1,107 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #2b5876, #4e4376);
+    }
+
+    .login-container {
+      width: 360px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .login-container h2 {
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #ffffffcc;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .form-group input::placeholder {
+      color: #e0e0e0;
+    }
+
+    .form-group input:focus {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.25);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-login:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .extra-links {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .extra-links a {
+      color: #ffffffcc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .extra-links a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
