@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(to right, #1c1c1c, #232526);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+.checkoutLayout {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.returnCart, .right {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.returnCart a {
+  color: #00ffd0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.returnCart a:hover {
+  text-decoration: underline;
+}
+
+.returnCart h1, .right h1 {
+  color: #00ff99;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.returnCart .item {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.returnCart .item img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.returnCart .info {
+  flex: 1;
+}
+
+.returnCart .quantity, .returnCart .returnPrice {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.right .form {
+  margin-bottom: 20px;
+}
+
+.right .group {
+  margin-bottom: 15px;
+}
+
+.right label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.right input,
+.right select {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+}
+
+.right input:focus,
+.right select:focus {
+  outline: 2px solid #00ffd0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.return .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.buttonCheckout {
+  background: #00c851;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttonCheckout:hover {
+  background: #00a044;
+}
